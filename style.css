@@ -1,0 +1,133 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template: 
+        "nav nav nav nav" 5rem 
+        "main main main main" 1000px 
+        "triple triple triple triple" 50rem 
+        "third third third third" 50rem/ 15% 2fr 2fr 15%;
+    font-size: 1.6rem;
+}
+
+.top-nav{
+    grid-area: nav;
+}
+
+.top-nav,
+.top-nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.top-nav ul{
+    list-style: none;
+    gap: 4rem;
+}
+
+.top-nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3rem;
+}
+
+main {
+    grid-area: main;
+    color: #fff;
+    background: url(imgs/main.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+main > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20rem;
+    height: 1000px;
+    width: 25%;
+}
+
+main section > h1{
+    font-size: 10rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+main h3 {
+    font-weight: 100;
+}
+
+#service-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    text-decoration: none;
+    color: #fff;
+    height: 5rem;
+    width: 20rem;
+}
+
+#main-card{
+    margin-top: 10rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    height: 25rem;
+    width: 23rem;
+    font-size: 1.3rem;
+    line-height: 3.1rem;
+}
+
+
+#main-card > h3::before{
+    content: ".";
+    background: white;
+}
+
+#big-20{
+    font-size: 4rem;
+}
+
+#main-button{
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color:#000;
+    background: #fff;
+    width: 60%;
+    height: 4rem;
+}
+
+.triple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: triple;
+    gap: 5rem;
+}
+.triple section{
+    width: 20%;
+    height: 50%;
+    text-align: center;
+}
+
+#third{
+    grid-area: third;
+    background-color: lightgrey;
+}
+
+#third-left{
+    display: grid;
+    grid-column: 2/3;
+}
+
